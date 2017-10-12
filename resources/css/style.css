@@ -1,0 +1,469 @@
+
+html {
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/* Header styles */
+header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+ .logo img {
+
+}
+
+#colmar {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+#academy {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: lightgray;
+
+}
+
+nav ul {
+  margin-right: 1.5rem;
+}
+
+nav li {
+  display: inline;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  padding: 0.25rem;
+}
+
+li:hover {
+  color: white;
+  background-color: #8bb2ab;
+}
+
+.mobile {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .desktop {
+   display: none;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+
+}
+
+/* Banner styles */
+
+.banner {
+  background-color: #8bb2ab;
+  display: flex;
+
+}
+
+.banner-image {
+    width: 60%;
+    margin-left: 2rem;
+  }
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.banner-text h2 {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.start-here {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  transition-property: all;
+  transition-delay: 200ms;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+
+}
+
+.start-here:hover {
+  background-color: crimson;
+  align-self: center;
+  width: 300px;
+  padding: 2rem;
+  border-radius: 20px;
+  font-size: 3rem;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner-image {
+    width: auto;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .banner-text {
+    width: auto;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .start-here {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Information styles */
+
+.information {
+  display: flex;
+  width: 100%;
+}
+
+.col-1 {
+  width: 60%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.col-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.col-1 h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.col-2-square {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.col-2-image {
+  width: 35%;
+}
+
+.col-2-image img {
+  width: 100%;
+  height: auto;
+}
+
+.col-2-text {
+  width: 65%;
+  margin-left: 1rem;
+}
+
+.col-2-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.col-2-text p, span {
+  margin-bottom: 0.5rem;
+}
+
+.read-more:hover {
+  font-weight: bold;
+  color: darkblue;
+}
+
+@media only screen and (max-width: 480px) {
+  .col-1 {
+    display: none;
+  }
+
+  .col-2 {
+    width: 100%;
+    margin-right: 1.5rem;
+  }
+
+  .col-2-square {
+    flex-direction: column;
+  }
+
+  .col-2-image {
+    width: 100%;
+  }
+
+  .col-2-text {
+    width: 100%;
+  }
+
+  .col-2-text h2 {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Course Section styles */
+
+.learning {
+  background-color: #8bb2ab;
+}
+
+.learning h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mobile-courses {
+  display: none;
+}
+
+.course-name {
+  background-color: lightgray;
+}
+
+.course-name h2 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.courses {
+  margin: 0 4.5rem 2rem 4.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-square {
+  background-color: white;
+  width: 32%;
+  margin-bottom: 2rem;
+}
+
+.course-square-image img:hover {
+  opacity: 1;
+}
+
+.course-square-image img {
+width: 100%;
+height: auto;
+opacity: 0.5;
+}
+
+.course-square h2 {
+font-size: 2rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+margin-left: 0.5rem;
+}
+
+
+
+.course-square h3 {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.course-square p {
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .learning {
+    background-color: white;
+  }
+
+  .mobile-courses {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .course-name {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: background-color 0.75s linear;
+  }
+
+  .course-name:hover {
+    background-color: #8bb2ab;
+  }
+}
+
+/* Thesis Exhibition styles */
+
+.thesis-exhibit h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.thesis {
+  display: flex;
+}
+
+.thesis-col-1 {
+  width: 60%;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.thesis-video video {
+ width: 100%;
+}
+
+.thesis-col-1 h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.thesis-col-2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 1.5rem;
+}
+
+#fisma, #now-and-then {
+  display: flex;
+  align-items: center;
+}
+
+.thesis-col-2 img {
+  width: 100%;
+  height: auto;
+}
+
+.thesis-col-2-image {
+  width: 35%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.thesis-col-2-text {
+  width: 65%;
+}
+
+.thesis-col-2-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+   .thesis {
+     justify-content: center;
+   }
+
+  .thesis-col-2 {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .thesis-col-1 {
+    width: 100%;
+  }
+}
+
+/* Footer styles */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  background-color: #8bb2ab;
+}
+
+footer span {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer ul {
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+}
+
+footer li {
+  display: inline;
+  margin-left: 1rem;
+}
